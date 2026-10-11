@@ -13,7 +13,7 @@
       "สระว่ายน้ำ",
       "อาหารเช้า"
     ],
-    "image": "https://loremflickr.com/600/400/resort?lock=12"
+    "image": "https://tse3.mm.bing.net/th/id/OIP.mXomOpjHCUFsHEq8DY8oogHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
     "id": 2,
@@ -27,7 +27,7 @@
       "WiFi ฟรี",
       "ฟิตเนส"
     ],
-    "image": "https://loremflickr.com/600/400/hotel,city?lock=12"
+    "image": "https://th.bing.com/th/id/OIP.6Pn3mS-NPjcpDUVHGTyJFwHaFj?w=268&h=200&c=7&r=0&o=7&pid=1.7&rm=3"
   },
   {
     "id": 3,
@@ -41,7 +41,7 @@
       "WiFi ฟรี",
       "วิวภูเขา"
     ],
-    "image": "https://loremflickr.com/600/400/mountain,homestay?lock=13"
+    "image": "https://tse2.mm.bing.net/th/id/OIP.4J1z0Tx4LNnpCbPznm6WaAHaFj?r=0&rs=1&pid=ImgDetMain&o=7&rm=3"
   },
   {
     "id": 4,
@@ -57,7 +57,7 @@
       "สระว่ายน้ำ",
       "สปา"
     ],
-    "image": "https://loremflickr.com/600/400/river,hotel?lock=14"
+    "image": "https://img.home.co.th/images/img_v/img_Directory/Gallery/img_Directory_17092024030743PM.webp"
   },
   {
     "id": 5,
@@ -73,7 +73,7 @@
       "ติดทะเล",
       "อาหารเช้า"
     ],
-    "image": "https://loremflickr.com/600/400/villa,sea?lock=15"
+    "image": "https://ddpoolvilla.com/wp-content/uploads/2023/01/323445342_689053655891632_6767459034601798758_n-1024x555.jpg"
   },
   {
     "id": 6,
@@ -87,6 +87,20 @@
       "WiFi ฟรี",
       "สวน"
     ],
-    "image": "https://loremflickr.com/600/400/garden,guesthouse?lock=8"
+    "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/9d/f5/dc/tongdo-fantasia.jpg?w=700&h=400&s=1"
+  },
+ {
+    "id": 7,
+    "name": "สวนสนุกของเกย์",
+    "city": "Gay city",
+    "price": 25000,
+    "rating": 5,
+    "reviews": 555,
+    "emoji": "💀",
+    "amenities": [
+      "WiFi ฟรี",
+      "สวนสวรรค์"
+    ],
+    "image": "https://i.pinimg.com/474x/2d/52/2b/2d522bcfd98abe281a97a0653357394f.jpg?nii=t"
   }
 ]

@@ -24,7 +24,7 @@ main {
 /* ปุ่ม: ใส่สี + มุมโค้ง + เปลี่ยนเคอร์เซอร์ตอนชี้ */
 button {
   background-color: #2980b9;
-  color: white;
+  color: rgb(245, 1, 212);
   border: none;
   padding: 10px 20px;
   border-radius: 6px;

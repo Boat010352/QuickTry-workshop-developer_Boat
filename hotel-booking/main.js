@@ -1,14 +1,16 @@
 let allHotels = [];
+let selectedCity = 'ทั้งหมด';
 
 async function loadHotels() {
   const res = await fetch('hotels.json');
   allHotels = await res.json();
-  renderHotels(allHotels);
+  filterHotels(selectedCity);
 }
 
 function renderHotels(list) {
   const grid = document.getElementById('hotel-grid');
   grid.innerHTML = list.map(cardHTML).join('');
+  document.getElementById('result-count').textContent = `พบ ${list.length} ที่พัก`;
 }
 
 // แปลงคะแนนเป็นดาว เช่น 4 → ★★★★☆
@@ -64,7 +66,11 @@ function cardHTML(hotel) {
 }
 
 function filterHotels(city) {
-  // TODO
+  selectedCity = city;
+  const filteredHotels = selectedCity === 'ทั้งหมด'
+    ? allHotels
+    : allHotels.filter((hotel) => hotel.city === selectedCity);
+  renderHotels(filteredHotels);
 }
 
 //  ต่อปุ่มกรองให้เรียก filterHotels + ไฮไลต์ปุ่มที่เลือกอยู่
@@ -72,12 +78,12 @@ document.querySelectorAll('.filter-btn').forEach((btn) => {
   btn.onclick = () => {
     // คืนทุกปุ่มให้เป็นสีขาว (ปุ่มปกติ)
     document.querySelectorAll('.filter-btn').forEach((b) => {
-      b.classList.remove('bg-teal-600', 'text-white', 'border-teal-600');
+      b.classList.remove('bg-pink-600', 'text-white', 'border-pink-600');
       b.classList.add('bg-white');
     });
     // ทำปุ่มที่กดให้เป็นสีเขียว (ปุ่มที่เลือกอยู่)
     btn.classList.remove('bg-white');
-    btn.classList.add('bg-teal-600', 'text-white', 'border-teal-600');
+    btn.classList.add('bg-pink-600', 'text-white', 'border-pink-600');
     filterHotels(btn.dataset.city);
   };
 });
